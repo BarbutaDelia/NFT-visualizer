@@ -1,0 +1,44 @@
+<aside>
+  <img src="imagini/tastyBones.svg"  width="147" height="147">
+</aside>
+<section>
+  <div class="row">
+    <div class="half">
+      <form>
+          <div class="line">
+            <div>
+              <label for="nume">Nume:</label><br>
+              <input type="text" id="numeProdus">
+            </div>
+            <div>
+              <label for="quantity">Cantitate:</label><br>
+              <input type="number" id="cantitateProdus">
+            </div>
+          </div>
+            <input onclick="addProduct(event);" type="button" value="Adaugă"><br>
+      </form>
+      <p>Alegeți modul de stocare:</p>
+      <div>
+        <input type="checkbox" id="local" name="local"
+              checked>
+        <label for="local" class="checkbox-label">Local Storage</label>
+      </div>
+      <div>
+        <input type="checkbox" id="db" name="db">
+        <label for="db" class="checkbox-label">IndexedDB</label>
+      </div>
+    </div>
+    <div class="half">
+      <table id="shopping">
+        <thead>
+          <tr>
+            <th>Nr.</th>
+            <th>Nume Produs</th>
+            <th>Cantitate</th>
+          </tr>
+        </thead>
+        <tbody> </tbody>
+      </table>
+    </div>
+  </div>
+</section>

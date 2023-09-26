@@ -1,0 +1,77 @@
+
+        <aside>
+          <img src="imagini/tastyBones.svg"  width="147" height="147">
+        </aside>
+            <section>
+              <h2>Creare cont de utilizator:</h2>
+              <form>
+                <div class="row">
+                  <div class="half">
+                    <label for="nume utilizator">Nume utilizator:</label><br>
+                    <input type="text" id="username"><br>
+                  </div>
+                  <div class="half">
+                    <label for="parola">Parolă:</label><br>
+                    <input type="password" id="password"><br>
+                  </div>
+                  <div class="half">
+                    <label for="nume">Nume:</label><br>
+                    <input type="text"><br>
+                  </div>
+                  <div class="half">
+                    <label for="prenume">Prenume:</label><br>
+                    <input type="text"><br>
+                  </div>
+                  <div class="half">
+                    <label for="email">Email:</label><br>
+                    <input type="email"><br>
+                  </div>
+                  <div class="half">
+                    <label for="telefon">Telefon:</label><br>
+                    <input type="tel"><br>
+                  </div>
+                  <div class="half">
+                    <label for="sex">Sex</label><br>
+                    <select id="sex">
+                        <option value="feminin">F</option>
+                        <option value="masculin">M</option>
+                    </select><br>
+                  </div>
+                  <div class="half">
+                    <label for="birthday">Data nașterii:</label> <br>
+                    <input type="date" id="birthday" name="birthday"><br>
+                  </div>
+                  <div class="half">
+                    <label for="fav">Colecția preferată:</label><br>
+                    <input list="fav" name="fav" />
+                    <datalist id="fav">
+                        <option value="Bored Ape">
+                        <option value="Crypto Punks">
+                        <option value="Cool Cats">
+                        <option value="We Are Kloud">
+                    </datalist><br>
+                  </div>
+                  <div class="half">
+                    <label for="favcolor">Culoarea preferată într-o colecție:</label><br>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+                  </div>
+                  <div class="half">
+                    <label for="appt">Ora completării formularului:</label><br>
+                    <input type="time" id="appt" name="appt"><br>
+                  </div>
+                  <div class="half">
+                    <label for="points">Experiența pe blockchain:</label><br>
+                    <input type="range" id="points" name="points" min="18" max="100"><br>
+                  </div>
+                  <div class="half">
+                    <label for="homepage">Adresa paginii personale:</label><br>
+                    <input type="url" id="homepage" name="homepage"><br>
+                  </div>
+                  <div class="half">
+                    <label for="suggestion">Cum am putea să îmbunătățim colecția?</label><br>
+                    <textarea rows="6" cols="16"></textarea><br>
+                  </div>
+                </div>
+                <button type="button" onclick="register()" >Trimite</button>
+              </form>
+            </section>

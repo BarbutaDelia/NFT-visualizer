@@ -1,0 +1,12 @@
+<!ELEMENT NFTs (NFT)*>
+<!ELEMENT NFT (name|price|rank|properties)*>
+<!ATTLIST NFT
+    id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT rank (#PCDATA)>
+ <!ELEMENT properties (headwear|body|background|type)*>
+<!ELEMENT headwear (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT background (#PCDATA)>
+<!ELEMENT type (#PCDATA)>

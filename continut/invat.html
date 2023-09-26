@@ -1,0 +1,57 @@
+
+        <aside>
+          <img src="imagini/tastyBones.svg"  width="147" height="147"><br>
+          <p><a href="#section1"> Informații </a></p>
+          <p><a href="#section2"> Canvas </a></p>
+          <p><a href="#section3"> Categorii de NFT-uri </a></p>
+        </aside>
+          <section id="section1">
+              <h2>Informații</h2>
+              <p id="date"></p>
+              <p id="uri"></p>
+              <p id="location"></p>
+              <p id="browser"></p>
+          </section>
+        <section class="midSection" id="section2">
+            <h2>Canvas</h2>
+            <p>
+            <label for="contur">Culoarea conturului:</label>
+            <input id="contur" name='contur' type="color"> <br>
+            <label for="umplere">Culoarea de umplere:</label>
+            <input id="umplere" name='umplere' type="color">
+            </p>
+            <canvas id="desen" onclick="draw(event)" width="400" height="200"></canvas>
+        </section>
+        <section id="section3">
+          <h2>Categorii de NFT-uri din cadrul colecției</h2>
+          <table id="myTable">
+            <tr>
+              <th>Funny Bones</th>
+              <th>Speedy Bones</th>
+              <th>Meaty Bones</th>
+            </tr>
+            <tr>
+              <td>75%</td>
+              <td>15%</td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <td>aprox. 0.75 eth</td>
+              <td>aprox. 1.4 eth</td>
+              <td>aprox. 2 eth</td>
+            </tr>
+          </table>
+          <label for="culoare">Culoare:</label>
+          <input id="culoare" name='culoare' type="color"> <br>
+          <form action="#myTable" class="line-form" onsubmit="insertLine()">
+            <label for="lineNo">Numărul liniei:</label>
+            <input id="lineNo" type="text">
+            <input type="submit" value="Adaugă linie">
+          </form>
+          <form action="#myTable" class="line-form" onsubmit="insertColumn()">
+            <label for="columnNo">Numărul coloanei:</label>
+            <input id="columnNo" type="text">
+            <input type="submit" value="Adaugă coloana">
+          </form>
+        </section>
+   
